@@ -13,9 +13,25 @@
 		392D3BCA2B3CFB9A0080D103 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392D3BC82B3CFB9A0080D103 /* Main.storyboard */; };
 		392D3BCC2B3CFB9B0080D103 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 392D3BCB2B3CFB9B0080D103 /* Assets.xcassets */; };
 		392D3BCF2B3CFB9B0080D103 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392D3BCD2B3CFB9B0080D103 /* LaunchScreen.storyboard */; };
+		F4F1B77054185A78232F1BD8 /* Pods_Unrar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C59701C719271A4AD446AF /* Pods_Unrar.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		392D3BF82B3D01830080D103 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		04C59701C719271A4AD446AF /* Pods_Unrar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Unrar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DE420599819896ECFDA0A70 /* Pods-Unrar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Unrar.release.xcconfig"; path = "Target Support Files/Pods-Unrar/Pods-Unrar.release.xcconfig"; sourceTree = "<group>"; };
 		392D3BBF2B3CFB9A0080D103 /* Unrar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unrar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		392D3BC22B3CFB9A0080D103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		392D3BC42B3CFB9A0080D103 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +40,8 @@
 		392D3BCB2B3CFB9B0080D103 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		392D3BCE2B3CFB9B0080D103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		392D3BD02B3CFB9B0080D103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		392D3BDB2B3D01830080D103 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
+		CE698C1854182B8C50F375ED /* Pods-Unrar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Unrar.debug.xcconfig"; path = "Target Support Files/Pods-Unrar/Pods-Unrar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4F1B77054185A78232F1BD8 /* Pods_Unrar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +61,8 @@
 			children = (
 				392D3BC12B3CFB9A0080D103 /* Unrar */,
 				392D3BC02B3CFB9A0080D103 /* Products */,
+				C8BD195B0041AC91503D0F67 /* Pods */,
+				6DD620588F14026A17B92BFF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +88,24 @@
 			path = Unrar;
 			sourceTree = "<group>";
 		};
+		6DD620588F14026A17B92BFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04C59701C719271A4AD446AF /* Pods_Unrar.framework */,
+				392D3BDB2B3D01830080D103 /* UniformTypeIdentifiers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8BD195B0041AC91503D0F67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE698C1854182B8C50F375ED /* Pods-Unrar.debug.xcconfig */,
+				1DE420599819896ECFDA0A70 /* Pods-Unrar.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 392D3BD32B3CFB9B0080D103 /* Build configuration list for PBXNativeTarget "Unrar" */;
 			buildPhases = (
+				1A403CE872F36EBA66721628 /* [CP] Check Pods Manifest.lock */,
 				392D3BBB2B3CFB9A0080D103 /* Sources */,
 				392D3BBC2B3CFB9A0080D103 /* Frameworks */,
 				392D3BBD2B3CFB9A0080D103 /* Resources */,
+				34A3D3EDCB6D2F4075FEDD15 /* [CP] Embed Pods Frameworks */,
+				392D3BF82B3D01830080D103 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -132,6 +174,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A403CE872F36EBA66721628 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Unrar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34A3D3EDCB6D2F4075FEDD15 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Unrar/Pods-Unrar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Unrar/Pods-Unrar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Unrar/Pods-Unrar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		392D3BBB2B3CFB9A0080D103 /* Sources */ = {
@@ -282,7 +366,9 @@
 		};
 		392D3BD42B3CFB9B0080D103 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE698C1854182B8C50F375ED /* Pods-Unrar.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -293,8 +379,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +396,9 @@
 		};
 		392D3BD52B3CFB9B0080D103 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DE420599819896ECFDA0A70 /* Pods-Unrar.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -321,8 +409,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

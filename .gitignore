@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Xcode
+.DS_Store
+*.swp
+*~.nib
+DerivedData/
+build/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xccheckout
+xcuserdata/
+
+# 忽略 CocoaPods 生成的文件
+/Pods
+/*.xcworkspace

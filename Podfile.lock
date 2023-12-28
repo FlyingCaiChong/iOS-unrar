@@ -1,0 +1,18 @@
+PODS:
+  - UnrarKit (2.10):
+    - UnrarKit/unrar-lib (= 2.10)
+  - UnrarKit/unrar-lib (2.10)
+
+DEPENDENCIES:
+  - UnrarKit
+
+SPEC REPOS:
+  trunk:
+    - UnrarKit
+
+SPEC CHECKSUMS:
+  UnrarKit: 62f535c7a34ec52d2514b9b148f33dcfa9a9dc39
+
+PODFILE CHECKSUM: e7a01b1567be8b4868bd3ac7bfa84d51c9bef60a
+
+COCOAPODS: 1.11.3
